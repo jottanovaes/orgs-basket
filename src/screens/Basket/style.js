@@ -1,8 +1,11 @@
+import { Dimensions } from 'react-native';
 import styled from 'styled-components/native';
+
+const width = Dimensions.get('screen').width;
 
 export const Thumb = styled.Image`
   width: 100%;
-  height: ${ ({width}) => (578 / 768 * width) }px;
+  height: ${ (578 / 768 * width) }px;
 `;
 
 export const Title = styled.Text`
@@ -20,7 +23,7 @@ export const Name = styled.Text`
   color: #464646;
   font-size: 26px;
   line-height: 42px;
-  font-weight: bold;
+  font-family: "MontserratBold"
 `;
 
 export const Logo = styled.Image`
@@ -37,6 +40,7 @@ export const FarmName = styled.Text`
   font-size: 16px;
   line-height: 26px;
   padding-left: 12px;
+  font-family: "MontserratRegular"
 `;
 
 export const Description = styled.Text`

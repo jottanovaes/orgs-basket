@@ -1,16 +1,13 @@
 import React from "react";
-import { Dimensions  } from "react-native";
 
 import top from '../../../assets/top.png';
 import * as S from "./style";
 import farm from '../../../assets/logo.png';
 
-const width = Dimensions.get('screen').width;
-
 export default function Basket() {
   return (
     <>
-      <S.Thumb source={top} width={ width }/>
+      <S.Thumb source={top}/>
       <S.Title>Basket details</S.Title>
 
       <S.BasketDetails>
