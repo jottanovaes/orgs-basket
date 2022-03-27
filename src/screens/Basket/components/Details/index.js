@@ -2,6 +2,7 @@ import React from 'react'
 import { TouchableOpacity, Text } from 'react-native';
 
 import * as S from './styles';
+import ModalButton from '../../../../components/ModalButton';
 
 function Details({ name, logo, farmName, description, price, button}) {
   return (
@@ -13,12 +14,7 @@ function Details({ name, logo, farmName, description, price, button}) {
         </S.Farm>
         <S.Description>{ description }</S.Description>
         <S.Price>$ { price.toFixed(2) }</S.Price>
-
-        <S.BuyButton>
-          <S.ButtonText>
-            { button }
-          </S.ButtonText>
-        </S.BuyButton>
+      <ModalButton { ...{button} }/>
     </>
   )
 }
