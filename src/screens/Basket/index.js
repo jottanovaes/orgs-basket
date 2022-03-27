@@ -1,21 +1,27 @@
 import React from "react";
 
-import { BasketDetails } from "./styles";
-import { ScrollView } from "react-native";
+import { BasketDetails, ItemTitle } from "./styles";
+import { FlatList } from "react-native";
 
 import Top from "./components/Top";
 import Details from "./components/Details";
-import Items from './components/Items';
+import Item from './components/Item';
 
 export default function Basket({ top, details, items }) {
   return (
-    <ScrollView>
-      <Top { ...top }/>
-
-      <BasketDetails>
-        <Details { ...details }/>
-        <Items {...items}/>
-      </BasketDetails>
-    </ScrollView>
+       <FlatList
+        data={ items.list }
+        renderItem={ Item }
+        keyExtractor={ ({ name }) => name }
+        ListHeaderComponent={ () => (
+          <>
+            <Top { ...top }/>
+            <BasketDetails>
+              <Details { ...details }/>
+              <ItemTitle>{ items.title }</ItemTitle>
+            </BasketDetails>
+          </>
+         ) }
+      />
   )
 }
