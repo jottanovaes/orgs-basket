@@ -1,6 +1,8 @@
 import logo from '../../assets/logo.png';
 
-import {broccoli, cucumber, potato, pumpkin, tomato} from '../../assets/vegetables'
+import Vegetables from '../../assets/vegetables'
+
+const {broccoli, cucumber, potato, pumpkin, tomato} = Vegetables;
 
 const basket = {
   top: {
@@ -26,7 +28,7 @@ const basket = {
         thumb: cucumber,
       },
       {
-        name: 'Potatp',
+        name: 'Potato',
         thumb: potato,
       },
       {
