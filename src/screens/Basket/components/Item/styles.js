@@ -1,20 +1,12 @@
 import styled from 'styled-components/native';
 
-export const ItemTitle = styled.Text`
-  color: #464646;
-  font-weight: bold;
-  margin-top: 32px;
-  margin-top: 8px;
-  font-size: 20px;
-  line-height: 32px;
-`;
-
-export const Item = styled.View`
+export const ItemCard = styled.View`
   flex-direction: row;
   align-items: center;
   border-bottom-width: 1px;
   border-bottom-color: #ECECEC;
   padding: 16px 0;
+  margin: 0 16px;
 `;
 
 export const ItemThumb = styled.Image`
