@@ -5,13 +5,13 @@ import { BasketDetails } from "./styles";
 import Top from "./components/Top";
 import Details from "./components/Details";
 
-export default function Basket() {
+export default function Basket({ top, details }) {
   return (
     <>
-      <Top />
+      <Top { ...top }/>
 
       <BasketDetails>
-        <Details />
+        <Details { ...details }/>
       </BasketDetails>
     </>
   )

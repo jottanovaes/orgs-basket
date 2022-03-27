@@ -3,11 +3,11 @@ import { Thumb, Title } from './styles'
 
 import top from '../../../../../assets/top.png';
 
-function Top() {
+function Top({ title }) {
   return (
     <>
       <Thumb source={top}/>
-      <Title>Basket details</Title>
+      <Title>{ title }</Title>
     </>
   )
 }
