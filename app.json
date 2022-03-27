@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "orgs-cesta",
-    "slug": "orgs-cesta",
+    "name": "Orgs",
+    "slug": "basket-orgs",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
